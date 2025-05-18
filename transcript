@@ -1,0 +1,41 @@
+# Compile of axi_master.sv was successful.
+# Compile of axi_slave.sv was successful.
+# Compile of axi_top.sv was successful.
+# Compile of seq_item.sv was successful.
+# Compile of sequence.sv was successful.
+# Compile of Sequencer.sv was successful.
+# Compile of interface.sv was successful.
+# Compile of driver.sv was successful.
+# Compile of monitor.sv was successful.
+# Compile of scoreboard.sv was successful.
+# Compile of agent.sv was successful.
+# Compile of enviroment.sv was successful.
+# Compile of test.sv was successful.
+# Compile of top.sv was successful.
+# 14 compiles, 0 failed with no errors.
+do run.tcl
+# vsim -gui work.tb_top "+UVM_TESTNAME=axi4_lite_test" -voptargs=""+acc"" 
+# Start time: 14:52:23 on May 18,2025
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility.
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi4_lite_slave(fast)".
+# ** Note: (vopt-143) Recognized 1 FSM in module "axi4_lite_master(fast)".
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading mtiUvm.uvm_pkg(fast)
+# Loading work.top_sv_unit(fast)
+# Loading mtiUvm.questa_uvm_pkg(fast)
+# Loading work.tb_top(fast)
+# Loading work.axi4_lite_if(fast__2)
+# Loading work.axi4_lite_top(fast)
+# Loading work.axi4_lite_master(fast)
+# Loading work.axi4_lite_slave(fast)
+# Loading work.axi4_lite_if(fast)
+# ** Error (suppressible): (vsim-8209) Virtual interface elem. 'ACLK' not found in modport 'SLV'.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit File: C:/Users/muzam/OneDrive/Documents/DDV LABS/DDV project/tb_files/monitor.sv Line: 35
+# ** Error (suppressible): (vsim-8209) Virtual interface elem. 'ACLK' not found in modport 'MST'.
+#    Time: 0 ns  Iteration: 0  Region: /top_sv_unit::axi4_lite_driver File: C:/Users/muzam/OneDrive/Documents/DDV LABS/DDV project/tb_files/driver.sv Line: 37
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./run.tcl PAUSED at line 3
